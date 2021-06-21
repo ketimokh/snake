@@ -15,6 +15,10 @@ const gameBoard = document.getElementById('game-board')
 function main (currentTime){
     if (gameOver){
         if (confirm('თქვენ წააგეთ თამაში.თამაშის დასაწყებად დააჭირეთ " OK ".')) {
+            if (window.location.href.includes ('ketimokh.github.io/')){
+                window.location = 'https://ketimokh.github.io/snake/';
+                return
+            }
             window.location = ' / '
         }
         return
