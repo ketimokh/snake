@@ -20,7 +20,7 @@ body{
 }
 
 .snake{
-    background-color: hsl(200, 100%, 50%);
+    background-color: hsl(123, 100%, 50%);
     border: .25vmin solid black;
 }
 .food{
