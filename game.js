@@ -15,14 +15,14 @@ const gameBoard = document.getElementById('game-board')
 function main (currentTime){
     if (gameOver){
         if (confirm('თქვენ წააგეთ თამაში.თამაშის დასაწყებად დააჭირეთ " OK ".')) {
-            window.location = '/ '
+            window.location = ' / '
         }
         return
     }
 
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
-    if (secondsSinceLastRender<1 / SNAKE_SPEED) return
+    if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
    
     lastRenderTime = currentTime
 
